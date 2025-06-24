@@ -7,14 +7,28 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 <style>
-body {
-background: url('https://image.tmdb.org/t/p/w500//rrCc7dONpjAt8N8VO0dGpdIXCVU.jpg') no-repeat center center fixed;
-background-size: cover;
-}
-.overlay {
-background-color: rgba(18, 18, 18, 0.85);
-}
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: url('https://image.tmdb.org/t/p/original/tvLdNeNp78LmKJyWbUJtk2zS3df.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .overlay {
+    min-height: 100%;
+    background-color: rgba(18, 18, 18, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 </style>
+
 <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
 </head>
 <body class="text-white font-sans">
